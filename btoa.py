@@ -7,6 +7,7 @@ def toSigned32(n):
     n = n & 0xffffffff
     return (n ^ 0x80000000) - 0x80000000
 
+# window.btoa implementation
 def btoa(e):
     n = None
     o = None
@@ -48,6 +49,3 @@ def btoa(e):
                 break
 
     return p
-
-
-print(btoa("oiuwdshjfewhnugfvhreiughregreuigzhreigfujkrweh"))
